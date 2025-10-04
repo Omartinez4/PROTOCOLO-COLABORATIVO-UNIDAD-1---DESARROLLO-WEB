@@ -1,0 +1,23 @@
+{
+    "name": "usuario/hexagonal-app",
+    "description": "Aplicación PHP con arquitectura hexagonal para gestión de usuarios",
+    "type": "project",
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Domain\\": "Domain/",
+            "Application\\": "Application/",
+            "Infrastructure\\": "Infrastructure/"
+        }
+    },
+    "authors": [
+        {
+            "name": "OCTAVIO MARTINEZ",
+            "email": "octandres2001.om9@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "license": "MIT"
+}
