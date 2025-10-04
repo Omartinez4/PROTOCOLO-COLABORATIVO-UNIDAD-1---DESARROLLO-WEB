@@ -1,0 +1,12 @@
+# Activa el motor de reescritura
+RewriteEngine On
+
+# Base del proyecto
+RewriteBase /ProtocoloColaborativoDesarrolloWeb/
+
+# Si el archivo o directorio no existe, redirige a index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+
